@@ -1,0 +1,43 @@
+* {
+  font-family: Bree Serif, Helvetica, sans-serif;
+}
+body {
+  margin: 0%;
+}
+.lectures {
+  /* background-color: antiquewhite; */
+  /* border: solid 1px; */
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  overflow-y: scroll;
+}
+.lecture {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #e3edf7;
+  border: solid 1px;
+  margin: auto;
+  width: 95vw;
+  margin-top: 1.5vh;
+  height: 14.8vh;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.others {
+  height: 96.5vh;
+  /* border: solid 1px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 50vw;
+  width: 70vw;
+}

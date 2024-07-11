@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-462d1fe84b879d730fe2180b0e0354e0.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lemon&family=Markazi+Text&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="timetable.css" />
+
+    <title>Student time table</title>
+  </head>
+  <body>
+    <div class="header">Time Table</div>
+    <div class="upload-container" id="file">
+      <div class="uploadone dabba">
+        <label for="">upload your Time table first</label>
+        <div class="input">
+          <div class="icon">
+            <i class="fa-sharp fa-regular fa-file-xls fa-xl"></i>
+          </div>
+          <div class="fileinput">
+            <input id="Student" type="file" accept=".xlsx" />
+          </div>
+        </div>
+        <button class="submit" onclick="Students()">Submit</button>
+      </div>
+    </div>
+
+    <div class="parent-container" id="timet">
+      <div class="day-time-cotainer">
+        <div class="box" id="dt">
+          <div class="day">Day</div>
+          <div class="time">Time</div>
+        </div>
+        <div class="box times" id="lec1-time"></div>
+        <div class="box times" id="lec2-time"></div>
+        <div class="box times" id="lec3-time"></div>
+        <div class="box times" id="lec4-time"></div>
+        <div class="box times" id="lec5-time"></div>
+        <div class="box times" id="lec6-time"></div>
+      </div>
+      <div class="container">
+        <div class="box days">Monday</div>
+        <div class="box days">Tuesday</div>
+        <div class="box days">Wednesday</div>
+        <div class="box days">Thursday</div>
+        <div class="box days">Friday</div>
+        <div class="box days">Saturday</div>
+
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+        <div class="box lectures"></div>
+      </div>
+    </div>
+    <script src="timetable.js"></script>
+  </body>
+</html>
