@@ -10,7 +10,7 @@ var minutes = currentTime.getMinutes();
 var seconds = currentTime.getSeconds();
 
 minutes = minutes < 10 ? "0" + minutes : minutes;
-// Create a string to display the time
+// Created a string to display the time
 var timeString = hours + ":" + minutes + ":" + seconds;
 
 let day = "";
@@ -48,19 +48,37 @@ function checkLecture() {
 
   if (timeString >= "9:00:00" && timeString <= "10:00:00") {
     lectures[0].style.backgroundColor = "aquamarine";
-  } else if (timeString >= "10:00:00" && timeString <= "11:00:00") {
+  }
+  //
+  else if (timeString >= "10:00:00" && timeString <= "11:00:00") {
     lectures[1].style.backgroundColor = "aquamarine";
-  } else if (timeString >= "11:00:00" && timeString <= "12:00:00") {
+  }
+  //
+  else if (timeString >= "11:00:00" && timeString <= "11:15:00") {
+    `<div class="others"><img src="Tea_break.png" alt="" /><h3>It's lunch time</h3></div>`;
+  }
+  //
+  else if (timeString >= "11:15:00" && timeString <= "12:15:00") {
     lectures[2].style.backgroundColor = "aquamarine";
-  } else if (timeString >= "12:00:00" && timeString <= "12:45:00") {
-    container.innerHTML = `<div class="others"><img src="lunchtime.png" alt="" /><h3>It's lunch time</h3></div>`;
-  } else if (timeString >= "12:45:00" && timeString <= "13:45:00") {
+  }
+  //
+  else if (timeString >= "12:15:00" && timeString <= "13:15:00") {
     lectures[3].style.backgroundColor = "aquamarine";
-  } else if (timeString >= "13:45:00" && timeString <= "14:45:00") {
+  }
+  //
+  else if (timeString >= "13:15:00" && timeString <= "14:15:00") {
+    `<div class="others"><img src="lunchtime.png" alt="" /><h3>It's lunch time</h3></div>`;
+  }
+  //
+  else if (timeString >= "14:15:00" && timeString <= "15:15:00") {
     lectures[4].style.backgroundColor = "aquamarine";
-  } else if (timeString >= "14:45:00" && timeString <= "15:45:00") {
+  }
+  //
+  else if (timeString >= "15:45:00" && timeString <= "16:15:00") {
     lectures[5].style.backgroundColor = "aquamarine";
-  } else {
+  }
+  //
+  else {
     container.innerHTML = `<div class="others"><img src="lectures over.png" alt="" /><h3>All Sessions  are Ended</h3></div>`;
   }
 }
